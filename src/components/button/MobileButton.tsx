@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, MouseEventHandler } from 'react';
+import { useState, useEffect, useRef, MouseEventHandler } from 'react';
 import s from './MobileButton.module.css';
 import BurgerMenu from '../burger-menu/BurgerMenu';
 

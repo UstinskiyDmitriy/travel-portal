@@ -1,4 +1,3 @@
-import React from 'react'
 import s from './MainTitles.module.css'
 interface TMainTitle {
   title: string

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import s from './Carousel.module.css'
 import { images } from '../../data/images'
 export default function Carousel() {
@@ -50,7 +50,7 @@ export default function Carousel() {
       </div>
       <div className={s.dots_container}>
       <div className={s.dots}>
-        {images.map((image, index) => (
+        {images.map((_image, index) => (
           <button
             key={index}
             className={` ${currentIndex === index ? `${s.dots_button_active}` : `${s.dots_button}`}`}

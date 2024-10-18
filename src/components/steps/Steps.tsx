@@ -1,4 +1,3 @@
-import React from 'react'
 import s from './Steps.module.css'
 export default function Steps() {
   return (

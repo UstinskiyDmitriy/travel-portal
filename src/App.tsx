@@ -1,4 +1,3 @@
-import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import MainButton from './components/button/MainButton';
 import Carousel from './components/carousel/Carousel';

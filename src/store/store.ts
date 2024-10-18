@@ -1,6 +1,5 @@
 // src/store/modalSlice.ts
-import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { setupOutsideClickListener } from './ModalAction';
+import { configureStore, createSlice} from '@reduxjs/toolkit';
 
 export interface ModalState {
   isRegisterOpen: boolean;
@@ -30,11 +29,7 @@ const modalSlice = createSlice({
       state.isLoginOpen = false;
     },
   },
-  extraReducers: (builder) => {
-    builder.addCase(setupOutsideClickListener.fulfilled, (state, action: PayloadAction<() => void>) => {
-      state.outsideClickListenerCleanup = action.payload;
-    });
-  },
+ 
 });
 
 export const { openRegisterModal, closeRegisterModal, openLoginModal, closeLoginModal } = modalSlice.actions;
