@@ -114,14 +114,26 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
   }
 
   .carousel{
-    width: 80%;
+    width: 95%;
   }
 
+  .carousel_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transition: opacity 0.5s;
+  }
+
+  .carousel_button {
+    top: 50%;
+  }
   .carousel_description {
   position: absolute;
   top: 0px;
@@ -131,4 +143,13 @@
   font-size: 20px;
   background-color: transparent;
   }
+
+  .dots_button {
+    display: none;
+  }
+
+  .dots_button_active {
+    display: none;
+  }
+  
 }

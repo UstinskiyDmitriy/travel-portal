@@ -22,7 +22,7 @@ function App() {
         <MainTitles title="POPULAR DESTINATIONS" />
         <Carousel />
         <div className="carousel_section_button">
-          {isTabletOrMobile && <MainButton title="Find More" size="11" />}
+          {isTabletOrMobile && <MainButton title="Find More" size="18" />}
           {isDesktop && (
             <MainButton title="Find More" size="24" url="/button-arrow.png" />
           )}

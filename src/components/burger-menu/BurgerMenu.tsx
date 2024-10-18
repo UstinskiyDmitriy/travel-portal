@@ -10,7 +10,7 @@ export default function BurgerMenu(props : Props) {
   return (
     
       <div ref={props.popupRef} className={s.popup}>
-          <button onClick={props.handleClose}>Х</button>
+          <button onClick={props.handleClose}>X</button>
           <ul>
             <li>How It Works</li>
             <li>Plan Your Trip</li>

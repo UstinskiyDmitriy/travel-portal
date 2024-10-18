@@ -35,12 +35,13 @@
   border: none;
   border-radius: 50%;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
   top: 5px;
   right:5px;
   cursor: pointer;
-  background-color: transparent;
+  background-color: #55525243;
+  color: rgb(13, 96, 111);
 }
 
 .close_button:hover {
@@ -103,7 +104,7 @@
 }
 
 .input_label {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-weight: 600;
   font-family: Aleo;
   color: rgb(13, 96, 111);
@@ -148,7 +149,7 @@
   .modal {
     padding: 1.5rem;
     border-radius: 0.5rem;
-    max-width: 70%;
+    max-width: 95%;
     position: relative;
   }
 }

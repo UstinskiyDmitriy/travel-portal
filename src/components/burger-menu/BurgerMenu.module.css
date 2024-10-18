@@ -1,28 +1,27 @@
 .popup {
   min-width: 40vw;
-  background: linear-gradient(to bottom, #FFFFFF 0%, #207a8a 100%);
+  background: linear-gradient(to bottom, #FFFFFF 0%, #207a8a7c 100%);
   font-size: 16px;
   font-weight: 600;
   padding: 20px 10px 5px 10px;
   border-radius: 5px;
   position: absolute;
-  right:4vw;
-  top: 2vh;
+  right:7vw;
+  top: 7vh;
 }
 
 
 .popup button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:#0D606F;
   border: none;
   border-radius: 50%;
-  color: #fff;
-  font-weight: 800;
+  font-size: 0.8rem;
+  font-weight: 700;
   position: absolute;
-  top: 0.3rem;
-  right: 0.3rem;
+  top: 5px;
+  right:5px;
+  cursor: pointer;
+  background-color: #55525243;
+  color: rgb(13, 96, 111);
 }
 
 .popup ul {
