@@ -1,9 +1,9 @@
 .popup {
   min-width: 40vw;
-  background: linear-gradient(to bottom, #FFFFFF 0%, #207a8a7c 100%);
+  background: linear-gradient(to bottom, #fffffffe 0%, #207a8af6 100%);
   font-size: 16px;
   font-weight: 600;
-  padding: 20px 10px 5px 10px;
+  padding: 10px 10px 5px 10px;
   border-radius: 5px;
   position: absolute;
   right:7vw;
@@ -14,13 +14,12 @@
 .popup button {
   border: none;
   border-radius: 50%;
-  font-size: 0.8rem;
   font-weight: 700;
   position: absolute;
-  top: 5px;
-  right:5px;
+  top: 0.1rem;
+  right: 0.1rem;
   cursor: pointer;
-  background-color: #55525243;
+  background-color: transparent;
   color: rgb(13, 96, 111);
 }
 
