@@ -1,0 +1,16 @@
+.main_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 14px;
+  border: none;
+  background-color: #0D606F;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main_button .button_title {
+  color: #fff;
+}

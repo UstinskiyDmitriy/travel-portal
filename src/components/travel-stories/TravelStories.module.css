@@ -1,0 +1,67 @@
+.main {
+  background-image: url('/travel-background.png');
+  width: 100vw;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-block-start: 50px;
+  color: #110c74;
+}
+
+.stories_wrapper {
+  display: flex;
+  gap :40px;
+  padding: 40px 120px 40px 120px;
+  background-color: rgba(255, 255, 255, 0.579);
+}
+
+.stories_wrapper h2 {
+  
+  font-family: Aleo;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.stories_wrapper p {
+font-family: Aleo;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.stories_wrapper img {
+  border-radius: 16px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.description a {
+  color: #0D606F;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1244px) {
+  .stories_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap :10px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(255, 255, 255, 0.626);
+  }
+
+  .stories_wrapper img {
+    border-radius: 16px;
+    width: 100%;
+    height: 30vh;
+  }
+}

@@ -1,0 +1,14 @@
+.mobile_button {
+  background-color: transparent;
+  border: none;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.mobile_button.open {
+  transform: rotate(90deg);
+}
+
+.mobile_button img:active {
+  scale: 1.1;
+}
+

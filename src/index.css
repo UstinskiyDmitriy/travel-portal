@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  max-width: 98.9vw;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,p,ul,ol,li {
+  margin:0;
+}

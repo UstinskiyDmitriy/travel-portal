@@ -1,0 +1,52 @@
+.main {
+  text-align: center;
+  margin-block-start: 50px;
+  padding: 0 8vw;
+}
+
+.main h1 {
+  color: rgb(242, 120, 92);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 53px;
+}
+
+.card_wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-block-start: 50px;
+}
+
+.card_wrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.card_wrapper div p {
+  color: rgb(13, 96, 111);
+}
+
+@media screen and (max-width: 1224px) {
+  .main {
+    margin-block-start: 10px;
+  }
+  .main h1 {
+    font-size: 14px
+  }
+
+  .card_wrapper {
+    margin-block-start: 10px;
+  }
+
+  .card_wrapper div img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card_wrapper div p {
+    font-size: 10px;
+  }
+}

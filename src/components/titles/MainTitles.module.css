@@ -1,0 +1,20 @@
+.title {
+  color: rgb(242, 120, 92);
+  font-family: 'Red Hat Text';
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+  margin-block-start: 100px;
+}
+
+@media screen and (max-width: 1244px) {
+  .title {
+  font-size: 14px;
+  line-height: 19px;
+  margin-block-start: 30px;
+  }
+}

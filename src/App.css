@@ -1,0 +1,13 @@
+.carousel_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel_section_button {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
