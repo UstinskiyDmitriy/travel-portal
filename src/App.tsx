@@ -11,14 +11,23 @@ import './App.css';
 function App() {
   const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' });
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
-
+  
+  const scrollToSection = (elementId:string, position: ScrollLogicalPosition) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: `${position}` });
+    }
+  };
   return (
     <div className="main">
-      <Header />
+      <Header scrollToSection={scrollToSection}/>
       <WelcomePage />
+      <section id='steps'>
       <MainTitles title="3 STEPS TO THE PERFECT TRIP" />
       <Steps />
-      <section className="carousel_section">
+      </section>
+     
+      <section className="carousel_section" id='destinations'>
         <MainTitles title="POPULAR DESTINATIONS" />
         <Carousel />
         <div className="carousel_section_button">
@@ -28,7 +37,7 @@ function App() {
           )}
         </div>
       </section>
-      <section>
+      <section id='stories'>
         <MainTitles title="TRAVEL STORIES" />
         <TravelStories />
       </section>

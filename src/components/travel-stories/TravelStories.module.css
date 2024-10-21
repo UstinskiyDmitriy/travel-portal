@@ -37,6 +37,11 @@ text-align: left;
 
 .stories_wrapper img {
   border-radius: 16px;
+  transition: ease-in-out .5s;
+}
+
+.stories_wrapper img:hover {
+  scale: 1.2;
 }
 
 .description {

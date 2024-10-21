@@ -8,7 +8,10 @@
   background-color: #0D606F;
   color: #fff;
   padding: 10px 20px;
-  cursor: pointer;
+}
+
+.main_button:hover {
+  background-color: #0e869b;
 }
 
 .main_button .button_title {

@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
-  max-width: 98.9vw;
+  max-width: 100vw;
   font-family: "Red Hat Text", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,4 +12,8 @@ body {
 
 h1,h2,h3,h4,h5,p,ul,ol,li {
   margin:0;
+}
+
+button {
+  cursor: pointer;
 }

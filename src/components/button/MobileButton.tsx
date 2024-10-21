@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef, MouseEventHandler } from 'react';
 import s from './MobileButton.module.css';
 import BurgerMenu from '../burger-menu/BurgerMenu';
-
-export default function MobileButton() {
+interface Props {
+  scrollToSection: (elementId: string, position:ScrollLogicalPosition) => void
+}
+export default function MobileButton({scrollToSection}:Props) {
   const [isOpen, setOpen] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
   
@@ -42,7 +44,7 @@ export default function MobileButton() {
       </button>
       {isOpen && (
         <div ref={popupRef} className={s.popup}>
-          <BurgerMenu handleClose={handleClose} popupRef={popupRef}/>
+          <BurgerMenu handleClose={handleClose} popupRef={popupRef} scrollToSection={scrollToSection}/>
         </div>
       )}
     </div>

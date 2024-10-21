@@ -8,7 +8,7 @@
   text-align: left;
   text-transform: uppercase;
   text-align: center;
-  margin-block-start: 100px;
+  padding-block-start: 150px;
 }
 
 @media screen and (max-width: 1244px) {

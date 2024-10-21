@@ -9,7 +9,11 @@ import { openLoginModal, closeLoginModal,} from '../../store/store';
 import { RootState } from '../../types';
 import CreateAccount from '../create-account/CreateAccount';
 
-export default function Header() {
+interface Header {
+  scrollToSection: (elementId: string, position:ScrollLogicalPosition) => void
+}
+
+export default function Header({scrollToSection}:Header) {
   const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' });
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
   const dispatch = useDispatch();
@@ -33,17 +37,17 @@ export default function Header() {
       {isDesktop && (
         <div className={s.list_wrapper}>
           <ul>
-            <li>How It Works</li>
-            <li>Plan Your Trip</li>
-            <li>Destinations</li>
-            <li>Travel Stories</li>
+            <li><a href="#">How It Works</a></li>
+            <li><a onClick={()=> scrollToSection('steps', 'start')}>Plan Your Trip</a></li>
+            <li><a onClick={()=> scrollToSection('destinations', 'start')}>Destinations</a></li>
+            <li><a onClick={()=> scrollToSection('stories','start')}>Travel Stories</a></li>
           </ul>
         </div>
       )}
       
       {isDesktop && (
         <div>
-          <MainButton title='Login' size='16' onClick={toggleLoginModal} />
+          <MainButton title='Login' size='20' onClick={toggleLoginModal} />
           {isLoginOpen && (
             <div>
               <Login loginRef={React.createRef()} />
@@ -60,7 +64,7 @@ export default function Header() {
         <div>
           <div className={s.mobile_header}>
             <MainButton title='Login' size='16' onClick={toggleLoginModal} />
-            <MobileButton />
+            <MobileButton scrollToSection={scrollToSection}/>
           </div>
           
           {isLoginOpen && (

@@ -22,13 +22,20 @@
 
 .list_wrapper ul {
   display: flex;
-  gap: 42px;
-  font-size: 16px;
-  font-weight: 500;
+  gap: 62px;
+  font-size: 20px;
+  font-weight: 600;
   list-style: none;
 }
 
-.list_wrapper li:hover {
+
+
+.list_wrapper ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.list_wrapper li:hover a{
   color: #c4ed0e
 }
 

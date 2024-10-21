@@ -6,7 +6,7 @@
   height: 100vh;
   color: #fff;
   position: relative;
-  z-index: -1;
+  z-index: 2;
 }
 
 .description {
@@ -15,14 +15,18 @@
   align-items: start;
   justify-content: start;
   gap: 50px;
-  width: 65vw;
-  padding: 140px 0 0 120px
+  width: 50vw;
+  padding: 240px 0 0 120px
 }
 
 .description h1 {
   font-size: 80px;
   font-weight: 700;
   line-height: 96px;
+}
+
+.description p {
+  font-size: 1.3rem;
 }
 
 .accent {

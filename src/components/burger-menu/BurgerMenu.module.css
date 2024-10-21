@@ -29,7 +29,11 @@
   gap: 10px;
   list-style: none;
   padding: 10px 0 0 0 ;
-  color:  rgb(242, 120, 92)
+}
+
+.popup ul li a {
+  text-decoration: none;
+  color:  rgb(242, 120, 92);
 }
 
 .popup ul li {

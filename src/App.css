@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px
+  gap: 0px;
+  margin-block-start: 8vh;
 }
 
 .carousel_section_button {

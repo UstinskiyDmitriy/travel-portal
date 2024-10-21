@@ -27,6 +27,11 @@
 
 .card_wrapper div p {
   color: rgb(13, 96, 111);
+  font-size: 20px;
+}
+
+.card_wrapper div img {
+  width: 10vw;
 }
 
 @media screen and (max-width: 1224px) {
