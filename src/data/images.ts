@@ -11,4 +11,5 @@ export const images: Data[] =[
   {src:'/Crimea.webp', description:'Crimea'},
   {src:'/Thailand.webp',description:'Thailand'},
   {src:'/Uzbekistan.jpg', description:'Uzbekistan'},
+  {src: '/Utah.webp', description:'Utah'}
 ]
